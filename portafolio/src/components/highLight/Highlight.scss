@@ -1,0 +1,17 @@
+@use '../../Common' as *;
+
+.highligth {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 1rem;
+	h1 {
+		margin: 0 !important;
+	}
+	.Separator {
+		height: 1px;
+		width: 100%;
+		border: 1px solid black;
+	}
+}

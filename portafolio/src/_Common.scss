@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
+$principalFont: 'Bebas Neue', cursive;
+$secundaryFont: 'Montserrat', sans-serif;
+
+$blue: #cff2ee;
+$pink: #fbd0fd;
+$purple: #bf7adf;
+$gray: #757e7e;
+$brown: #c98e64;
+$leganux: #294959;
+$vw: transparent linear-gradient(288deg, #002052 0%, #002052 51%, #00437a 100%) 0% 0% no-repeat
+	padding-box;
+
+@mixin flexCenter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@mixin flexStartCenter {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+@mixin flexCenterStart {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+@mixin flexCenterEnd {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+:is(h1, h2, h3, h4, h5) {
+	font-family: $principalFont;
+}
+:is(p, span) {
+	font-family: $secundaryFont;
+}
+
+.minnorText {
+	font-family: $secundaryFont;
+	font-size: 0.6em;
+}
+.blackText {
+	font-weight: bold;
+}
+
+.blue {
+	background: $blue;
+}
+.pink {
+	background: $pink;
+}
+.purple {
+	background: $purple;
+}
+.gray {
+	background: $gray;
+}
+.brown {
+	background: $brown;
+}
+.vw {
+	background: $vw;
+}
+.leganux {
+	background: $leganux;
+}

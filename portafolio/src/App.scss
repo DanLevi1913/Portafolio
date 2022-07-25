@@ -1,0 +1,54 @@
+@use 'Common' as *;
+
+* {
+	overflow: hidden;
+}
+
+.startView {
+	height: 100vh;
+	width: 100%;
+	background: black;
+	@include flexCenter;
+
+	h1 {
+		font-size: 10em;
+		color: white;
+		opacity: 0;
+		font-family: $principalFont;
+	}
+	button {
+		background: transparent;
+		border: solid 1px white;
+		color: white;
+		padding: 10px 30px 10px 30px;
+		margin-top: 3rem;
+		cursor: pointer;
+	}
+}
+
+.charging {
+	animation: charging;
+	animation-duration: 4s;
+}
+.removeStart {
+	animation: removeStart;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes removeStart {
+	0% {
+		height: 100vh;
+	}
+	100% {
+		height: 0px;
+	}
+}
+@keyframes charging {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

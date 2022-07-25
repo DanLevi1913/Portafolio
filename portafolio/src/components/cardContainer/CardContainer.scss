@@ -1,0 +1,25 @@
+@use '../../Common' as *;
+
+.cardContainer {
+	padding: 1em;
+	border-radius: 10px;
+	box-shadow: 0px 0px 1px 0px;
+	border: 1px solid transparent;
+
+	hr {
+		width: 100%;
+		margin: 0.5rem;
+	}
+}
+.orientationCenter {
+	@include flexCenter;
+}
+.orientationStart {
+	@include flexStartCenter;
+}
+.orientationStartTop {
+	@include flexStartCenter;
+}
+.orientationEnd {
+	@include flexCenterEnd;
+}

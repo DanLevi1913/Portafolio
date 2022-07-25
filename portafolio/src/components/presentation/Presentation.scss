@@ -1,0 +1,25 @@
+@use '../../Common' as *;
+
+.presentationView {
+	padding: 1.2em;
+	min-height: 100vh;
+	height: auto;
+	width: 100%;
+	@include flexCenterStart;
+
+	h1 {
+		font-family: $principalFont;
+		margin-top: 2rem;
+		font-size: 3em;
+	}
+	p {
+		font-family: $secundaryFont;
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
