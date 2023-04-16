@@ -1,0 +1,49 @@
+@use '../../Common' as *;
+
+.contentHab{
+    background-color: rgba(0, 0, 0, 0.697);
+    color: white;
+    height: max-content;
+    margin: 10px 0 10px 0;
+    padding: 20px 20px;
+    border-radius: 25px;
+}
+
+
+
+.layoutDos{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.col-6 > .customImg {
+    padding:  8px 0;
+}
+.customImg{
+    height: 5.25rem;
+    width: max-content;
+    margin-bottom: 4px;
+    transition: all 300ms ease-in;
+
+ &:hover{
+     transform: scale(1.2);
+ }
+ 
+}
+.npm{
+    height: 3.125rem;
+    width: max-content;
+    transition: all 300ms ease-in;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+.next{
+    height: 4.125rem;
+    width: max-content;
+    transition: all 300ms ease-in;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}

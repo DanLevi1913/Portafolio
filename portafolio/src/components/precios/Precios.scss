@@ -1,0 +1,13 @@
+@use '../../Common' as *;
+
+.precios {
+	padding: 1.2em;
+	min-height: 100vh;
+	height: auto;
+	width: 100%;
+	@include flexCenterStart;
+}
+
+.preciosPannel{
+    height: 30px !important;
+}

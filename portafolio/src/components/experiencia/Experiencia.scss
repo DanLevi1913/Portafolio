@@ -95,7 +95,32 @@
 		}
 	}
 
-	:is(.vwText, .leganuxText) {
-		color: white;
+	:is(.vwText, .leganuxText, .uaehText) {
+		color: white !important;
+		cursor: pointer;
+
+		&:hover > .exp {
+			& > :is(h5,p){
+				transition: all 500ms ease-in-out;
+				letter-spacing: 2px;
+			}
+		}
+		 
+	
+	}
+	
+	.containerCurriculum{
+		gap: 10px;
+		display: grid;
+		grid-template-columns: repeat(3,1fr);
+	}
+	.changeSize{
+		transition: all 1s linear;
+		
+	}
+
+
+	.changeSize:hover{
+		width: 66%;
 	}
 }

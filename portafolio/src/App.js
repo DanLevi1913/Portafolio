@@ -1,6 +1,8 @@
-import React, { useRef, useState } from 'react';
+import Aos from 'aos';
+import React, { useEffect, useRef, useState } from 'react';
 import './App.scss';
 import { Experiencia } from './components/experiencia/Experiencia';
+import { Precios } from './components/precios/Precios';
 import { Presentation } from './components/presentation/Presentation';
 
 export const App = () => {
@@ -29,6 +31,11 @@ export const App = () => {
 		startView.current.classList.add('removeStart');
 	};
 
+	useEffect(() => {
+		Aos.init()
+	}, []);
+
+
 	return (
 		<>
 			<div className='containerPrincipal'>
@@ -50,6 +57,7 @@ export const App = () => {
 				</div>
 				{isStarted && <Presentation />}
 				{isStarted && <Experiencia />}
+				{isStarted && <Precios />}
 			</div>
 		</>
 	);

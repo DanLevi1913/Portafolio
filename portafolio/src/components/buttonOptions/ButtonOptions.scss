@@ -14,6 +14,10 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 
+	.links{
+		transform: skew(20deg);
+	}
+
 	div.explain {
 		background: black;
 		position: absolute;
@@ -52,9 +56,9 @@
 		}
 	}
 
-	.spaceOne {
+	.links .spaceOne {
 		background-image: url('./img/cliente.jpeg');
-		transform: skew(20deg);
+		
 		@include backgroundBlendButtonOption;
 		@include flexCenterStart;
 		cursor: pointer;
@@ -64,9 +68,9 @@
 			color: white;
 		}
 	}
-	.spaceTwo {
+	.links .spaceTwo {
 		background-image: url('./img/reclutadores.jpeg');
-		transform: skew(20deg);
+		
 		@include backgroundBlendButtonOption;
 		@include flexCenterStart;
 		cursor: pointer;
